@@ -12,6 +12,10 @@ for (let i = 0; i < height.length; i++) {
 console.log(tallest);
 
 
+
+
+
+
 console.log("#2: Hangman Lite");
 
 let word = "Vietnamese";
@@ -23,36 +27,59 @@ for (let i = 0; i < word.length; i++) {
         frequency = frequency + 1;
     }
 }
-    if (frequency > 0) {
-        console.log("Yeah, the letter " + letter + " exists " + frequency + " times in my word.");
-    } else {
-        console.log("Nope.  The letter " + letter + " doesn't exist in my word.");
+if (frequency > 0) {
+    console.log("Yeah, the letter " + letter + " exists " + frequency + " times in my word.");
+} else {
+    console.log("Nope.  The letter " + letter + " doesn't exist in my word.");
+}
+
+
+
+
+
+
+console.log("#3 Cherokee Hare");
+
+let startingPopulation = 30;
+let birthRate = 0.2;
+let numberOfWeeks = 7;
+
+for (let i = 0; i < numberOfWeeks; i++) {
+    startingPopulation = startingPopulation * (1 + birthRate);
+}
+
+console.log("There will be " + startingPopulation + " Cherokee Hares after " + numberOfWeeks + " weeks.");
+
+
+
+
+
+
+console.log("#4 Change Machine");
+
+let amount = 200;
+
+
+
+
+
+
+
+
+
+
+console.log("#5 Finding Palindromes");
+
+let newWord = "bubble";
+let palindrome = true;
+
+for (let i = 0; i < newWord.length; i++) {
+    if (newWord[i] !== newWord[newWord.length - i - 1]) {
+        palindrome = false;        
     }
+}
+console.log(palindrome);
 
 
-
-    console.log("#3 Cherokee Hare");
-
-    let startingPopulation = 30;
-    let birthRate = 0.2;
-    let numberOfWeeks = 7;
-
-    for (let i = 0; i < numberOfWeeks; i++) {
-        startingPopulation = startingPopulation * (1 + birthRate);
-    }
-
-    console.log("There will be " + startingPopulation + " Cherokee Hares after " + numberOfWeeks + " weeks.");
-
-
-    console.log("#4 Change Machine");
-
-    let amount = 200
-
-
-
-
-    console.log("#5 Finding Palindromes");
-
-    
 
 
