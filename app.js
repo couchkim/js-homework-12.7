@@ -64,31 +64,31 @@ console.log("#4 Change Machine");
 // With the remainder, determine how many 1s - which is the same as the remainder after the 5s.
 // Display an array that shows how many of each were given.
 
-let amount = 167;
+let amount = 299;
 let change = [0, 0, 0, 0];
 
 if (amount>20){
-    change[0]= amount/20;
+    change[0]= ((amount/20)-((amount%20)/20));
     amount=amount % 20;
 } else{
     change[0]=0;
 }
 
 if (amount>10){
-    change[1]= amount/10;
+    change[1]= ((amount/10)-((amount%10)/10));
     amount=amount % 10;
 } else{
     change[1]=0;
 }
 
 if (amount>5){
-    change[2]= amount/5;
+    change[2]= ((amount/5)-((amount%5)/5));
     amount=amount % 5;
 } else{
     change[2]=0;
 }
 
-amount=change[3];
+change[3]=amount;
 
 console.log(change);
 
