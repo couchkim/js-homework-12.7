@@ -57,7 +57,20 @@ console.log("There will be " + startingPopulation + " Cherokee Hares after " + n
 
 console.log("#4 Change Machine");
 
+//From a given dollar amount, determine how to make change using the fewest number of bills.
+// First, determine how many 20s.
+// With the remainder, determine how many 10s.
+// With the remainder, determine how many  5s.
+// With the remainder, determine how many 1s - which is the same as the remainder after the 5s.
+// Display an array that shows how many of each were given.
+
 let amount = 200;
+let change = [0, 0, 0, 0];
+
+if (amount>20){
+    amount % 20 === newAmount;
+}
+
 
 
 
@@ -80,6 +93,6 @@ for (let i = 0; i < newWord.length; i++) {
 }
 console.log(palindrome);
 
-
+// Assume it's true unless you find a condition that makes it false'
 
 
